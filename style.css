@@ -1,0 +1,23 @@
+#hl {
+    border-top: 1px solid lightgray;
+}
+#tabs {
+    position: absolute;
+    right: 30px;
+    bottom: 2px;
+}
+#home {
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tabLayout {
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#contacts {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    bottom: 20px;
+}
+
