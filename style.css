@@ -6,12 +6,8 @@
     right: 30px;
     bottom: 2px;
 }
-#home {
-    font-size: 30px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 .tabLayout {
-    font-size: 25px;
+    font-size: 30px !important;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #contacts {
@@ -19,5 +15,8 @@
     justify-content: flex-end;
     gap: 20px;
     bottom: 20px;
+}
+li {
+    list-style-type: circle;
 }
 
