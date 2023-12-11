@@ -19,4 +19,67 @@
 li {
     list-style-type: circle;
 }
+@keyframes reduceProfileImg {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.5);
+    }
+
+}
+@keyframes reduceInitialText {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.8);
+    }
+}
+@keyFrames moveProfileImgUp {
+    from {
+        transform: scale(0.5) translateY(0);
+    }
+    to {
+        transform: scale(0.5) translateY(-90px);
+    }
+}
+@keyFrames upInitialText {
+    from {
+        transform: scale(0.8) translateY(0);
+    }
+    to {
+        transform: scale(0.8) translateY(-140px);
+    }
+
+}
+@keyFrames upInitialBackground {
+    from{
+        height: 439px;
+    }
+    to {
+        height: 260px;
+    }
+}
+@keyFrames upInitialSectionBottom {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-180px);
+    }
+}
+.move-Initial-section-bottom-up{
+    animation: upInitialSectionBottom 1s forwards;
+}
+
+.move-initial-Background-up {
+    animation: upInitialBackground 1s forwards;
+}
+.minimize-initial-text {
+    animation: reduceInitialText 0.8s forwards, upInitialText 0.8s forwards 0.8s;
+}
+.minimize-img {
+    animation: reduceProfileImg 0.8s forwards, moveProfileImgUp 0.8s forwards 0.8s; 
+}
 

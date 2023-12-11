@@ -3,25 +3,30 @@ console.log("running");
 const homeInfo = document.getElementById("homeInfo");
 const experiencesInfo = document.getElementById("experiencesInfo");
 
-let homeOpen = true;
-let experiencesOpen = false;
-let projectsOpen = false;
+const profilePicture = document.getElementById("profilePicture");
+const initialInfoText = document.getElementById("initialInfoText");
+const topSection = document.getElementById("topSection");
+const topSectionBottom = document.getElementById("topSectionBottom");
+
+
 
 function experiencesTab() {
+ 
+      //   homeInfo.classList.add("is-hidden");
+      //  experiencesInfo.classList.remove("is-hidden");
 
-    if(homeOpen){
-        homeInfo.classList.add("is-hidden");
-        experiencesInfo.classList.remove("is-hidden");
-        homeOpen = false;
-        experiencesOpen = true;
-    }
+        profilePicture.classList.add("minimize-img");
+        initialInfoText.classList.add("minimize-initial-text");
+
+        setTimeout(()=> {
+            topSection.classList.add("move-initial-Background-up");
+            topSectionBottom.classList.add("move-Initial-section-bottom-up");
+        }, 1500);
 }
+
 function homeTab(){
 
-    if(experiencesOpen) {
         homeInfo.classList.remove("is-hidden");
         experiencesInfo.classList.add("is-hidden");
-        homeOpen = true;
-        experiencesOpen = false;
-    }
+    
 }
