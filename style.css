@@ -19,6 +19,7 @@
 li {
     list-style-type: circle;
 }
+
 @keyframes reduceProfileImg {
     from {
         transform: scale(1);
@@ -26,8 +27,21 @@ li {
     to {
         transform: scale(0.5);
     }
-
 }
+
+@keyframes moveProfileImgUp {
+    from {
+        transform: scale(0.5) translateY(0);
+    }
+    to {
+        transform: scale(0.5) translateY(-90px);
+    }
+}
+
+.minimize-img {
+    animation: reduceProfileImg 0.7s forwards, moveProfileImgUp 0.7s forwards 0.7s; 
+}
+
 @keyframes reduceInitialText {
     from {
         transform: scale(1);
@@ -36,15 +50,8 @@ li {
         transform: scale(0.8);
     }
 }
-@keyFrames moveProfileImgUp {
-    from {
-        transform: scale(0.5) translateY(0);
-    }
-    to {
-        transform: scale(0.5) translateY(-90px);
-    }
-}
-@keyFrames upInitialText {
+
+@keyframes upInitialText {
     from {
         transform: scale(0.8) translateY(0);
     }
@@ -53,7 +60,12 @@ li {
     }
 
 }
-@keyFrames upInitialBackground {
+
+.minimize-initial-text {
+    animation: reduceInitialText 0.7s forwards, upInitialText 0.7s forwards 0.7s;
+}
+
+@keyframes upInitialBackground {
     from{
         height: 439px;
     }
@@ -61,7 +73,23 @@ li {
         height: 260px;
     }
 }
-@keyFrames upInitialSectionBottom {
+.move-initial-Background-up {
+    animation: upInitialBackground 1s forwards;
+}
+
+@keyframes downInitialBackground {
+    from{
+        height: 260px;
+    }
+    to {
+        height: 439px;
+    }
+}
+.move-initial-Background-down {
+    animation: downInitialBackground 1s forwards;
+}
+
+@keyframes upInitialSectionBottom {
     from {
         transform: translateY(0);
     }
@@ -69,17 +97,144 @@ li {
         transform: translateY(-180px);
     }
 }
+
 .move-Initial-section-bottom-up{
     animation: upInitialSectionBottom 1s forwards;
 }
 
-.move-initial-Background-up {
-    animation: upInitialBackground 1s forwards;
+@keyframes downInitialSectionBottom {
+    from {
+        transform: translateY(-180px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
-.minimize-initial-text {
-    animation: reduceInitialText 0.8s forwards, upInitialText 0.8s forwards 0.8s;
+
+.move-Initial-section-bottom-down{
+    animation: downInitialSectionBottom 1s forwards;
 }
-.minimize-img {
-    animation: reduceProfileImg 0.8s forwards, moveProfileImgUp 0.8s forwards 0.8s; 
+
+@keyframes downInitialText {
+    from {
+        transform: scale(0.8) translateY(-140px);
+    }
+    to {
+        transform: scale(0.8) translateY(0);
+    }
 }
+
+@keyframes increaseInitialText {
+
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.reverse-Inital-text-info {
+    animation: downInitialText 0.7s forwards, increaseInitialText 0.7s forwards 0.7s;
+}
+
+@keyframes downProfilePicture {
+    
+    from {
+        transform: scale(0.5) translateY(-90px);
+    }
+    to {
+        transform: scale(0.5) translateY(0);
+    }
+}
+
+@keyframes increaseProfilePicture {
+    
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.reverse-profile-picture {
+
+    animation: downProfilePicture 0.7s forwards, increaseProfilePicture 0.7s forwards 0.7s;
+}
+
+@keyframes moveAboutMe {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(350%);
+    }
+}
+
+.move-about-me {
+    animation: moveAboutMe 1.5s forwards;
+}
+@keyframes moveAboutMeReverse {
+    from {
+        transform: translateX(350%);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+.move-about-me-reverse {
+    animation: moveAboutMeReverse 1.5s forwards;
+}
+
+@keyframes moveExperienceLeftToRight {
+    from {
+        transform: translateX(-350%);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+.move-experience-left-to-right {
+    animation: moveExperienceLeftToRight 1.5s forwards;
+}
+
+@keyframes moveExperienceRightToLeft {
+    from {
+        transform: translateX(350%);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.move-experience-right-to-left {
+    animation: moveExperienceRightToLeft 1.5s forwards;
+}
+
+@keyframes moveExperienceLeftToRightReverse {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-350%);
+    }
+}
+.move-experience-left-to-right-reverse {
+    animation: moveExperienceLeftToRightReverse 1.5s forwards;
+}
+
+@keyframes moveExperienceRightToLeftReverse {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(350%);
+    }
+}
+.move-experience-right-to-left-reverse {
+    animation: moveExperienceRightToLeftReverse 1.5s forwards;
+}
+
+
 
