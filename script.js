@@ -60,6 +60,8 @@ function homeTab(){
        if(projectsOpen) {
         moveProjectsAwayHome();
        }
+
+       if(!homeOpen) {
        aboutMeSection.classList.remove("is-hidden");
        aboutMeSection.classList.remove("move-about-me");
        aboutMeSection.classList.add("move-about-me-reverse");
@@ -75,6 +77,7 @@ function homeTab(){
            profilePicture.classList.add("reverse-profile-picture");
        }, 700);
     }, 500);
+    }
 
        homeOpen = true;
        experiencesOpen = false;
