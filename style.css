@@ -19,7 +19,21 @@
 li {
     list-style-type: circle;
 }
-
+.tickets_webpage {
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+}
+.amafo {
+    width: 498px;
+    height: 300px;
+    margin-top: 20px;
+}
+.first_person {
+    width: 498px;
+    height: 300px;
+    margin-top: 20px;
+}
 @keyframes reduceProfileImg {
     from {
         transform: scale(1);

@@ -19,7 +19,7 @@
             <button id="experiencesButton" class="navbar-item tabLayout button is-white" onclick=experiencesTab()>
               Experiences
             </button>
-              <button id="projectsButton" class="navbar-item tabLayout button is-white">
+              <button id="projectsButton" class="navbar-item tabLayout button is-white" onclick=projectsTab()>
                 Projects
               </button>  
           </div>
@@ -53,11 +53,10 @@
     <div id="homeInfo" style="position: absolute; left: 35%; margin-top: 40px;">
         <h1 style="font-size: 30px; font-weight: bold;">About me</h1>
         <p style="font-size: 20px;">I am passionate about Full-Stack applications, UI/UX, and <br>
-        Video Game Development. Furthermore, I want to provide<br>
-        unique experiences to users by utilizing technologies in a <br>
-        masterful manner. I see a Computer as a sandbox and <br>
-        programming languages as tools such as a shovel or a <br>
-        bucket that I can use to create a sandcastle in any shape.</p>
+        Video Game Development. I am a resilient person that <br> 
+        will always push himself to write better code while being <br>
+        eager to learn new techniques. Furthermore, I want to provide <br> 
+        unique experiences to users by utilizing technologies <br> in a masterful manner.</p>
     </div>
     
     <div id="experiencesInfo" style="justify-content: center; display:flex; align-items: center; flex-direction: column;" class="is-hidden">
@@ -68,9 +67,9 @@
         <h1 class="subtitle">Oct. 2022 - Present</h1>
         <ul style="margin-left:5px;">
           <li>Efficiently analyze weather data to be sent to partners such as NASA and NOAA.</li>
-          <li>Developed a full-stack application that stores employees’ tickets regarding faulty data with
-            features such as creating, updating, deleting, and sorting tickets while ensuring excellence in
-            backend development and friendly user interface with JavaScript, Node.js, HTML, CSS, Firebase.</li>
+          <li>Created scripts that facilitate data gathering for research with Bash.</li>
+          <li>Developed applications for displaying and storing data with JavaScript, HTML, CSS, Node.Js, and Firebase that 
+            are utilized by employees in the Data Service Deparment.</li>
         </ul>
     </div>
     <div id="experience2" class="box" style="width: 600px; margin-top: 40px;">
@@ -90,7 +89,7 @@
   </div>
   <div id="experience3" class="box" style="width: 600px; margin-top: 40px;">
     <a href="https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute">
-    <img style="width: 50px; height: 50px; margin-left: 500px;" src="img/google_logo.png" alt="ScienceLogic logo"></a>
+    <img style="width: 50px; height: 50px; margin-left: 500px;" src="img/google_logo.png" alt="Google logo"></a>
     <h1 class="title" style="margin-top:-62px;">Google Computer Science<br> Summer Institute</h1>
     <h1 class="subtitle" style="margin-bottom: 3px;">Student</h1>
     <h1 class="subtitle">July. 2022 - Aug. 2022</h1>
@@ -102,9 +101,59 @@
         employees and community leaders.</li>
     </ul>
     <a href="https://drive.google.com/file/d/1097ldKVSqwxqnbwfg2wg4Cr2AxDjyb5b/view">
-    <img style="width: 440px; height: 300px; margin-top: 20px; margin-left: 50px;" src="img/cssi_certificate.png" alt="ScienceLogic logo"></a>
+    <img style="width: 440px; height: 300px; margin-top: 20px; margin-left: 50px;" src="img/cssi_certificate.png" alt="CSSI certificate"></a>
 </div>
   </div>
+
+  <div id="projectsInfo" style="justify-content: center; display:flex; align-items: center; flex-direction: column;" class="is-hidden">
+
+    <div id="project1" class="box" style="width: 1552px; margin-top: 50px;">
+      <h1 class="title">Tickets Webpage</h1>
+      <h1 class="subtitle" style="margin-bottom: 3px;">JavaScript, HTML, CSS, Node.Js, Firebase</h1>
+      <h1 class="subtitle">Nov. 2023</h1>
+      <ul style="margin-left:5px;">
+        <li>Developed a webpage that stores employees' tickets regarding faulty data for the Space Science and Engineering Center.</li>
+        <li>Created a friendly user-interface that is intuitive and easy to use while offering a complete set of features, and cleanly written code.</li>
+      </ul>
+      <div>
+      <img class="tickets_webpage" src="img/tickets_webpage.png" alt="Tickets Webpage">
+      <img class="tickets_webpage" src="img/tickets_webpage_2.png" alt="Tickets Webpage">
+      <img class="tickets_webpage" src="img/tickets_webpage_3.png" alt="Tickets Webpage">
+      </div>
+    </div>
+
+    <div id="project2" class="box" style="width: 1552px; margin-top: 50px;">
+      <h1 class="title">Video Game Development Contest (VimJam2)</h1>
+      <h1 class="subtitle" style="margin-bottom: 3px;">C#, Unity, Blender</h1>
+      <h1 class="subtitle">Sept. 2021</h1>
+      <ul style="margin-left:5px;">
+        <li>Created a Video Game for a "game-jam", which included programming, 3D modeling, and sound design.</li>
+        <li>The Video Game, Amafo, is a 3D puzzle game where the player's objective is to collect yellow creatures to pass the puzzles.</li>
+        <div>
+          <img class="amafo" src="img/amafo_1.png" alt="Tickets Webpage">
+          <img class="amafo" src="img/amafo_2.png" alt="Tickets Webpage">
+          <img class="amafo" src="img/amafo_3.png" alt="Tickets Webpage">
+        </div>
+      </ul>
+    </div>
+
+    <div id="project3" class="box" style="width: 1552px; margin-top: 50px;">
+      <h1 class="title">First-Person Video Game</h1>
+      <h1 class="subtitle" style="margin-bottom: 3px;">C#, Unity, Blender</h1>
+      <h1 class="subtitle">April. 2023</h1>
+      <ul style="margin-left:5px;">
+        <li>Developed a first-person Video Game Prototype where the player can explore a small village made out of voxels.</li>
+        <li>Optimized shaders to react with game objects while ensuring a pleasant looking 3D environment.</li>
+      </ul>
+      <div>
+        <img class="first_person" src="img/first-person-1.png" alt="First Person Game">
+        <img class="first_person" src="img/first-person-2.png" alt="First Person Game">
+        <img class="first_person" src="img/first-person-3.png" alt="First Person Game">
+      </div>
+
+    </div>
+  </div>
+
     <script src="script.js"></script>
     
 </body>
