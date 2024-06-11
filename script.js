@@ -11,6 +11,7 @@ const topSectionBottom = document.getElementById("topSectionBottom");
 const aboutMeSection = document.getElementById("homeInfo");
 
 //Experiences
+const experience0 = document.getElementById("experience0");
 const experience1 = document.getElementById("experience1");
 const experience2 = document.getElementById("experience2");
 const experience3 = document.getElementById("experience3");
@@ -39,9 +40,10 @@ function experiencesTab() {
 
         setTimeout(() => {
             experiencesInfo.classList.remove("is-hidden");
-            experience1.classList.add("move-experience-left-to-right");
-            experience2.classList.add("move-experience-right-to-left");
-            experience3.classList.add("move-experience-left-to-right");
+            experience0.classList.add("move-experience-left-to-right")
+            experience1.classList.add("move-experience-right-to-left");
+            experience2.classList.add("move-experience-left-to-right");
+            experience3.classList.add("move-experience-right-to-left");
         }, animTime);
         setTimeout(() => {
             aboutMeSection.classList.add("is-hidden");
@@ -116,18 +118,21 @@ function projectsTab() {
 
 function moveExperiencesAway(){
 
-    experience1.classList.add("move-experience-left-to-right-reverse");
-    experience2.classList.add("move-experience-right-to-left-reverse");
-    experience3.classList.add("move-experience-left-to-right-reverse");
+    experience0.classList.add("move-experience-left-to-right-reverse")
+    experience1.classList.add("move-experience-right-to-left-reverse");
+    experience2.classList.add("move-experience-left-to-right-reverse");
+    experience3.classList.add("move-experience-right-to-left-reverse");
 
     setTimeout(()=> {
-        experience1.classList.remove("move-experience-left-to-right");
-        experience2.classList.remove("move-experience-right-to-left");
-        experience3.classList.remove("move-experience-left-to-right");
+        experience0.classList.remove("move-experience-left-to-right")
+        experience1.classList.remove("move-experience-right-to-left");
+        experience2.classList.remove("move-experience-left-to-right");
+        experience3.classList.remove("move-experience-right-to-left");
 
-        experience1.classList.remove("move-experience-left-to-right-reverse");
-        experience2.classList.remove("move-experience-right-to-left-reverse");
-        experience3.classList.remove("move-experience-left-to-right-reverse");
+        experience0.classList.remove("move-experience-left-to-right-reverse")
+        experience1.classList.remove("move-experience-right-to-left-reverse");
+        experience2.classList.remove("move-experience-left-to-right-reverse");
+        experience3.classList.remove("move-experience-right-to-left-reverse");
         experiencesInfo.classList.add("is-hidden");
     }, 500);
 }
